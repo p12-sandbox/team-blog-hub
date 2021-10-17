@@ -1,12 +1,12 @@
 export const config = {
   siteMeta: {
-    title: "p12 blog hub",
+    title: "p12 blogs",
     teamName: "p12",
     description: "RSS based blog for p12.",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://p12-blog-hub.vercel.app"
+      ? "https://p12-blogs.vercel.app"
       : "http://localhost:3000",
   headerLinks: [
     {
