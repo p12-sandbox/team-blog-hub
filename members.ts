@@ -23,12 +23,13 @@ export const members: Member[] = [
     name: "はーマン",
     role: "ビジネス",
     bio:
-      "何でも好きな雑食スタイル",
-    avatarSrc: "/avatars/herman.jpg",
+      "小学4年生の頃、唾で作ったシャボン玉を口から飛ばして遊んでいたら、「本当に気持ち悪いよ」と女の子に言われました。来年からペパボでディレクターになります！",
+    avatarSrc: "/avatars/herman.png",
     sources: [
       "https://herman.hatenablog.jp/rss",
     ],
     twitterUsername: "HerMan0422",
+    suzuriUsername: "HERMAN",
     websiteUrl: "https://herman.hatenablog.jp",
   },
  
