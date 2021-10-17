@@ -11,6 +11,7 @@ $side-padding-sm: 1rem;
   display: flex;
   flex-flow: column;
   position: relative;
+  border-radius: 9px;
   background: var(--color-base-background-lighter);
 }
 .post-link__author {
