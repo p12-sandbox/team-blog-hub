@@ -23,6 +23,7 @@ const Page: NextPage<Props> = (props) => {
     avatarSrc,
     twitterUsername,
     githubUsername,
+    suzuriUsername,
     websiteUrl,
   } = props.member;
 
@@ -65,6 +66,19 @@ const Page: NextPage<Props> = (props) => {
                   <img
                     src="/icons/github.svg"
                     alt={`GitHubのユーザー@${githubUsername}`}
+                    width={22}
+                    height={22}
+                  />
+                </a>
+              )}
+              {suzuriUsername && (
+                <a
+                  href={`https://suzuri.jp/${suzuriUsername}`}
+                  className="member-header__link"
+                >
+                  <img
+                    src="/icons/suzuri.svg"
+                    alt={`suzuriのユーザー@${suzuriUsername}`}
                     width={22}
                     height={22}
                   />
