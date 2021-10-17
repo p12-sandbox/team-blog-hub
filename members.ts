@@ -9,11 +9,13 @@ export const members: Member[] = [
     sources: [
       "https://note.com/yukyu30/rss",
       "https://zenn.dev/yu_9/feed",
+      "https://blog.yukyu.net/rss.xml"
     ],
     twitterUsername: "yukyu30",
     githubUsername: "yukyu30",
     suzuriUsername: "yukyu_konpeki_dou",
     websiteUrl: "https://blog.yukyu.net",
+    excludeUrlRegex: "/diary/"
   },
   {
     id: "herman",
