@@ -16,5 +16,19 @@ export const members: Member[] = [
     githubUsername: "yukyu30",
     websiteUrl: "https://blog.yukyu.net",
   },
+  {
+    
+    id: "herman",
+    name: "はーマン",
+    role: "ビジネス",
+    bio:
+      "何でも好きな雑食スタイル",
+    avatarSrc: "/avatars/herman.jpg",
+    sources: [
+      "https://herman.hatenablog.jp/rss",
+    ],
+    twitterUsername: "HerMan0422",
+    websiteUrl: "https://herman.hatenablog.jp",
+  },
  
 ];
