@@ -4,7 +4,6 @@ export const members: Member[] = [
   {
     id: "yukyu30",
     name: "悠久",
-    role: "エンジニア職",
     bio:
       "広く浅くで何にでも手を出してしまうやつ。コメダに住むのが夢",
     avatarSrc: "/avatars/yukyu30.jpg",
@@ -18,10 +17,8 @@ export const members: Member[] = [
     websiteUrl: "https://blog.yukyu.net",
   },
   {
-    
     id: "herman",
     name: "はーマン",
-    role: "ビジネス職",
     bio:
       "小学4年生の頃、唾で作ったシャボン玉を口から飛ばして遊んでいたら、「本当に気持ち悪いよ」と女の子に言われました。来年からペパボでディレクターになります！",
     avatarSrc: "/avatars/herman.png",
@@ -31,6 +28,19 @@ export const members: Member[] = [
     twitterUsername: "HerMan0422",
     suzuriUsername: "HERMAN",
     websiteUrl: "https://herman.hatenablog.jp",
+  },
+  {
+    id: "jay",
+    name: "Jay",
+    bio:
+      "ラジオと小説と九州が好きな人です。仲良くしましょう！",
+    avatarSrc: "/avatars/jay.jpg",
+    sources: [
+      "https://jay-forlearn.hatenablog.com/rss",
+    ],
+    twitterUsername: "Jay_ZoNo",
+    suzuriUsername: "j__a__y",
+    websiteUrl: "https://jay-forlearn.hatenablog.com",
   },
  
 ];
