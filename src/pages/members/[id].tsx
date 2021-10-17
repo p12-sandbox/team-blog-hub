@@ -23,6 +23,7 @@ const Page: NextPage<Props> = (props) => {
     avatarSrc,
     twitterUsername,
     githubUsername,
+    suzuriUsername,
     websiteUrl,
   } = props.member;
 
