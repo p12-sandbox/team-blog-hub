@@ -15,7 +15,7 @@ export const members: Member[] = [
     githubUsername: "yukyu30",
     suzuriUsername: "yukyu_konpeki_dou",
     websiteUrl: "https://blog.yukyu.net",
-    excludeUrlRegex: "/diary/"
+    excludeUrlRegex: "/diary/|/info/"
   },
   {
     id: "herman",
