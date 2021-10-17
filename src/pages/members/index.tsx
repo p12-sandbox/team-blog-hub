@@ -23,6 +23,7 @@ const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
           />
         </div>
         <h2 className="member-card__name"> {member.name}</h2>
+        <p className="member-card__role">{member.role}</p>
         <p className="member-card__bio">{member.bio}</p>
       </a>
     </Link>
