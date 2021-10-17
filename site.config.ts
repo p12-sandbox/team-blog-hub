@@ -1,6 +1,6 @@
 export const config = {
   siteMeta: {
-    title: "p12 Blog<s",
+    title: "p12 Blog's",
     teamName: "p12",
     description: "RSS based blog for p12.",
   },
