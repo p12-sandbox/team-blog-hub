@@ -43,7 +43,7 @@ export const members: Member[] = [
     id: "yukyan",
     name: "ユーキャン",
     bio: "ディズニーとゲームとYouTubeが好きなオタク。最近は英語学習してます！よろしくお願いします！",
-    avatarSrc: "/avatars/yukyan.jpg",
+    avatarSrc: "/avatars/yukyan.png",
     sources: [
       "https://nexem-dumpster.hatenablog.jp/rss",
       "https://qiita.com/n3_x/feed",
