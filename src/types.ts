@@ -9,6 +9,7 @@ export type Member = {
   excludeUrlRegex?: string;
   githubUsername?: string;
   twitterUsername?: string;
+  suzuriUsername?: string;
   websiteUrl?: string;
 };
 
