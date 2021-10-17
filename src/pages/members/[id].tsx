@@ -70,6 +70,19 @@ const Page: NextPage<Props> = (props) => {
                   />
                 </a>
               )}
+              {suzuriUsername && (
+                <a
+                  href={`https://suzuri.jp/${suzuriUsername}`}
+                  className="member-header__link"
+                >
+                  <img
+                    src="/icons/suzuri.svg"
+                    alt={`suzuriのユーザー@${suzuriUsername}`}
+                    width={22}
+                    height={22}
+                  />
+                </a>
+              )}
               {websiteUrl && (
                 <a href={websiteUrl} className="member-header__link">
                   <img
