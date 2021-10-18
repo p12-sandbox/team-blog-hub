@@ -10,11 +10,27 @@ export const ThemeChanger = () => {
 
   if (!mounted) return null
 
+　if(theme === 'dark'){
+    return (
+      <button className="theme-changer_button" onClick={() => setTheme('light')}>
+        <img
+          src="/icons/lightmode.svg"
+          alt={`ライトテーマに切り替える`}
+          width={30}
+          height={30}
+        />
+      </button>
+    )
+  }
+
   return (
-    <div>
-      The current theme is: {theme}
-      <button onClick={() => setTheme('light')}>Light Mode</button>
-      <button onClick={() => setTheme('dark')}>Dark Mode</button>
-    </div>
+    <button className="theme-changer_button" onClick={() => setTheme('dark')}>
+      <img
+        src="/icons/darkmode.svg"
+        alt={`ダークモードに切り替える`}
+        width={30}
+        height={30}
+      />
+    </button>
   )
 }
