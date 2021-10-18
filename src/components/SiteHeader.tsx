@@ -33,7 +33,7 @@ export const SiteHeader: React.FC = () => (
                 </a>
                 );
             })}
-            <ThemeChanger className="site-header__nav__item"/>
+            <ThemeChanger/>
         </div>
 
       </div>
