@@ -3,12 +3,13 @@ import Head from "next/head";
 import { config } from "@site.config";
 import { SiteHeader } from "@src/components/SiteHeader";
 import { SiteFooter } from "@src/components/SiteFooter";
-
+import { ThemeProvider } from 'next-themes';
+import { ThemeChanger } from '@src/components/ThemeChanger';
 import "@src/styles/globals.scss";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider>
       <Head>
         <link
           rel="icon shortcut"
@@ -21,8 +22,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <SiteHeader />
+      <ThemeChanger />
       <Component {...pageProps} />
       <SiteFooter />
-    </>
+    </ThemeProvider>
   );
 }
