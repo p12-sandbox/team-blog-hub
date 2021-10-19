@@ -9,7 +9,7 @@ import "@src/styles/globals.scss";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultTheme="system">
       <Head>
         <link
           rel="icon shortcut"
