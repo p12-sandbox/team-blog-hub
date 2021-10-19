@@ -1,4 +1,4 @@
-name: daily deploy website
+name: daily deploy 10am
 on:
   # 一応動確のために手動で GitHub Actions を実行可能にする
   # その際の引数として checkout 時の ref を渡している
@@ -12,7 +12,7 @@ on:
   # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UST)
   # 実行の際に参照されるブランチは上記の default で指定したものが使用される
   schedule:
-    - cron:  '0 1 * * *'
+    - cron:  '55 0 * * *'
 jobs:
   deploy:
     runs-on: ubuntu-latest
