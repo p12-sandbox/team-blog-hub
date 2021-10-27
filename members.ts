@@ -7,7 +7,6 @@ export const members: Member[] = [
     bio: "広く浅くで何にでも手を出してしまうやつ。コメダに住むのが夢",
     avatarSrc: "/avatars/yukyu30.jpg",
     sources: [
-      "https://note.com/yukyu30/rss",
       "https://zenn.dev/yu_9/feed",
       "https://blog.yukyu.net/rss.xml"
     ],
