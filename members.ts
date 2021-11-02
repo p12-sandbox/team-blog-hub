@@ -13,7 +13,7 @@ export const members: Member[] = [
     twitterUsername: "yukyu30",
     githubUsername: "yukyu30",
     suzuriUsername: "yukyu_konpeki_dou",
-    websiteUrl: "https://blog.yukyu.net",
+    websiteUrl: "https://hub.yukyu.net",
     excludeUrlRegex: "/diary/|/info/"
   },
   {
