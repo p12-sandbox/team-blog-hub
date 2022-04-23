@@ -1,3 +1,6 @@
+# お願い
+`yarnを使ってください。
+
 # Team Blog Hub
 
 ブログのRSSのURLを登録することで、チームメンバーの投稿を一覧にまとめて表示します。Zenn、Qiita、Medium、note、はてなブログなど、RSSフィードを取得できるサイトであれば、メンバーは好きな場所に投稿できます。
@@ -15,6 +18,11 @@ $ yarn install
 $ yarn build
 $ yarn dev
 ```
+## ESlint
+```bash
+$ yarn lint
+```
+Next.jsのESLintに関するドキュメント:https://nextjs.org/docs/basic-features/eslint
 
 - サイトの基本設定は`site.config.ts`で行います。
 - メンバーのプロフィールやRSSの登録は`members.ts`で行います。
