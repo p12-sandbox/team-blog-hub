@@ -1,5 +1,4 @@
 import Head from "next/head";
-
 import { config } from "@site.config";
 
 // types

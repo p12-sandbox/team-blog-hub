@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { config } from "@site.config";
-import { ThemeChanger } from '@src/components/ThemeChanger';
+import { ThemeChanger } from "@src/components/ThemeChanger";
 import { ContentWrapper } from "@src/components/ContentWrapper";
 
 export const SiteHeader: React.FC = () => (
@@ -9,8 +10,10 @@ export const SiteHeader: React.FC = () => (
       <div className="site-header__inner">
         <Link href="/" passHref>
           <a className="site-header__logo-link">
-            <img
+            <Image
               src="/logo.svg"
+              width={80}
+              height={80}
               alt={config.siteMeta.title}
               className="site-header__logo-img"
             />

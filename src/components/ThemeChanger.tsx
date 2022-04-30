@@ -1,4 +1,5 @@
-import { useTheme } from 'next-themes'
+import { useTheme } from "next-themes"
+import Image from "next/image"
 import { useState, useEffect } from "react";
 
 export const ThemeChanger = () => {
@@ -7,15 +8,15 @@ export const ThemeChanger = () => {
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
-
+  const { theme, setTheme } = useTheme()
   if (!mounted) {
     return null
   }
-  const { theme, setTheme } = useTheme()
-　if(theme === 'dark'){
+  
+  if(theme === 'dark'){
     return (
       <button className="theme-changer_button" onClick={() => setTheme('light')}>
-        <img
+        <Image
           src="/icons/lightmode.svg"
           alt={`ライトテーマに切り替える`}
           width={30}
@@ -27,7 +28,7 @@ export const ThemeChanger = () => {
 
   return (
     <button className="theme-changer_button" onClick={() => setTheme('dark')}>
-      <img
+      <Image
         src="/icons/darkmode.svg"
         alt={`ダークモードに切り替える`}
         width={30}
