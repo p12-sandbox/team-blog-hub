@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image"
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-
 import { PostItem } from "@src/types";
 import {
   getMemberByName,
@@ -25,8 +25,9 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
     <article className="post-link">
       <Link href={getMemberPath(member.id)} passHref>
         <a className="post-link__author">
-          <img
+          <Image
             src={member.avatarSrc}
+            alt={member.name}
             className="post-link__author-img"
             width={35}
             height={35}
@@ -43,12 +44,6 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
         <h2 className="post-link__title">{title}</h2>
         {hostname && (
           <div className="post-link__site">
-            <img
-              src={getFaviconSrcFromHostname(hostname)}
-              width={14}
-              height={14}
-              className="post-link__site-favicon"
-            />
             {hostname}
           </div>
         )}

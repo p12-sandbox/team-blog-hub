@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"
 import { members } from "@members";
 import { getMemberPath } from "@src/utils/helper";
 
@@ -13,7 +14,7 @@ export const ScrollableMembers: React.FC = () => {
         >
           <a className="scrollable-member__link">
             <span className="scrollable-member__image">
-              <img
+              <Image
                 src={member.avatarSrc}
                 alt={member.name}
                 className="scrollable-member__img"

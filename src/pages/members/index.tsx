@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
-
+import Image from "next/image";
 import { config } from "@site.config";
 import { members } from "@members";
 import { ContentWrapper } from "@src/components/ContentWrapper";
@@ -14,7 +14,7 @@ const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
     <Link href={getMemberPath(member.id)}>
       <a className="member-card">
         <div className="member-card__avatar">
-          <img
+          <Image
             src={member.avatarSrc}
             alt={member.name}
             width={80}
