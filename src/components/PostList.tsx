@@ -26,7 +26,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
       <Link href={getMemberPath(member.id)} passHref>
         <a className="post-link__author">
           <Image src={member.avatarSrc} alt={member.name} className="post-link__author-img" width={35} height={35} />
-          <div className="post-link__author-name">
+          <div className="post-link__info">
             <div className="post-link__author-name">{member.name}</div>
             <time dateTime={isoDate} className="post-link__date">
               {dayjs(isoDate).fromNow()}
