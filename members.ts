@@ -58,7 +58,7 @@ export const members: Member[] = [
     id: "imfinechan",
     name: "ぽん",
     bio: "ぽんです！",
-    avatarSrc: "/avatars/pon.jepg",
+    avatarSrc: "/avatars/pon.jpeg",
     sources: [
       "https://note.com/imfinechan/rss",
     ],
