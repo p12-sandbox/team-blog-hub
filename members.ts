@@ -54,5 +54,16 @@ export const members: Member[] = [
     suzuriUsername: "yukyanjp",
     websiteUrl: "https://nexem-dumpster.hatenablog.jp/",
   },
+  {
+    id: "imfinechan",
+    name: "ぽん",
+    bio: "ぽんです！",
+    avatarSrc: "/avatars/pon.jepg",
+    sources: [
+      "https://note.com/imfinechan/rss",
+    ],
+    twitterUsername: "imfinechan",
+    websiteUrl: "https://note.com/imfinechan/",
+  },
  
 ];
