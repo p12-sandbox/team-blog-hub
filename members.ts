@@ -35,6 +35,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/jay.jpg",
     sources: [
       "https://jay-forlearn.hatenablog.com/rss",
+      "https://jumpeiuezono.com/rss.xml",
     ],
     twitterUsername: "Jay_ZoNo",
     suzuriUsername: "j__a__y",
