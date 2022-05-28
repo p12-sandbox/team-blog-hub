@@ -1,7 +1,7 @@
-import { NextPage } from "next";
-import { ContentWrapper } from "@src/components/ContentWrapper";
-import { LinkBackHome } from "@src/components/LinkBackHome";
-import { PageSEO } from "@src/components/PageSEO";
+import { NextPage } from 'next'
+import { ContentWrapper } from '@src/components/ContentWrapper'
+import { LinkBackHome } from '@src/components/LinkBackHome'
+import { PageSEO } from '@src/components/PageSEO'
 
 const Page: NextPage = () => {
   return (
@@ -13,9 +13,7 @@ const Page: NextPage = () => {
           <div className="about__body">
             <p>
               このサイトはチームのためのブログスターター
-              <a href="https://github.com/catnose99/team-blog-hub">
-                Team Blog Hub
-              </a>
+              <a href="https://github.com/catnose99/team-blog-hub">Team Blog Hub</a>
               をもとに作成されました。ブログのRSSのURLを登録することで、チームメンバーの投稿を一覧にまとめて表示します。
             </p>
             <p>
@@ -35,7 +33,7 @@ const Page: NextPage = () => {
         </section>
       </ContentWrapper>
     </>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page
