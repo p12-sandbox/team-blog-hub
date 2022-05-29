@@ -9,10 +9,11 @@ on:
         description: branch|tag|SHA to checkout
         default: 'master'
         required: true
-  # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UST)
+  # 毎日日本時間の 午前7時、夜11時 に GitHub Actions が実行される (cron の時刻は UCT)
   # 実行の際に参照されるブランチは上記の default で指定したものが使用される
   schedule:
     - cron:  '55 13 * * *'
+    - cron:  '55 22 * * *'
 jobs:
   deploy:
     runs-on: ubuntu-latest
