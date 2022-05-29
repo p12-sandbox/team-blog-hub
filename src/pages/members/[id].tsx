@@ -1,31 +1,19 @@
-import { NextPage, GetStaticProps, GetStaticPaths } from "next";
-import { members } from "@members";
-import { PostItem, Member } from "@src/types";
-import { PostList } from "@src/components/PostList";
-import { ContentWrapper } from "@src/components/ContentWrapper";
-import { PageSEO } from "@src/components/PageSEO";
-import {
-  getMemberById,
-  getMemberPostsById,
-  getMemberPath,
-} from "@src/utils/helper";
+import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
+import Image from 'next/image'
+import { members } from '@members'
+import { PostItem, Member } from '@src/types'
+import { PostList } from '@src/components/PostList'
+import { ContentWrapper } from '@src/components/ContentWrapper'
+import { PageSEO } from '@src/components/PageSEO'
+import { getMemberById, getMemberPostsById, getMemberPath } from '@src/utils/helper'
 
 type Props = {
-  postItems: PostItem[];
-  member: Member;
-};
+  postItems: PostItem[]
+  member: Member
+}
 
 const Page: NextPage<Props> = (props) => {
-  const {
-    id,
-    name,
-    bio,
-    avatarSrc,
-    twitterUsername,
-    githubUsername,
-    suzuriUsername,
-    websiteUrl,
-  } = props.member;
+  const { id, name, bio, avatarSrc, twitterUsername, githubUsername, suzuriUsername, websiteUrl } = props.member
 
   return (
     <>
@@ -34,64 +22,29 @@ const Page: NextPage<Props> = (props) => {
         <ContentWrapper>
           <header className="member-header">
             <div className="member-header__avatar">
-              <img
-                src={avatarSrc}
-                alt={name}
-                width={100}
-                height={100}
-                className="member-header__avatar-img"
-              />
+              <Image src={avatarSrc} alt={name} width={100} height={100} className="member-header__avatar-img" />
             </div>
             <h1 className="member-header__name">{name}</h1>
             <p className="member-header__bio">{bio}</p>
             <div className="member-header__links">
               {twitterUsername && (
-                <a
-                  href={`https://twitter.com/${twitterUsername}`}
-                  className="member-header__link"
-                >
-                  <img
-                    src="/icons/twitter.svg"
-                    alt={`Twitterのユーザー@${twitterUsername}`}
-                    width={22}
-                    height={22}
-                  />
+                <a href={`https://twitter.com/${twitterUsername}`} className="member-header__link">
+                  <Image src="/icons/twitter.svg" alt={`Twitterのユーザー@${twitterUsername}`} width={22} height={22} />
                 </a>
               )}
               {githubUsername && (
-                <a
-                  href={`https://github.com/${githubUsername}`}
-                  className="member-header__link"
-                >
-                  <img
-                    src="/icons/github.svg"
-                    alt={`GitHubのユーザー@${githubUsername}`}
-                    width={22}
-                    height={22}
-                  />
+                <a href={`https://github.com/${githubUsername}`} className="member-header__link">
+                  <Image src="/icons/github.svg" alt={`GitHubのユーザー@${githubUsername}`} width={22} height={22} />
                 </a>
               )}
               {suzuriUsername && (
-                <a
-                  href={`https://suzuri.jp/${suzuriUsername}`}
-                  className="member-header__link"
-                >
-                  <img
-                    src="/icons/suzuri.svg"
-                    alt={`suzuriのユーザー@${suzuriUsername}`}
-                    width={22}
-                    height={22}
-                  />
+                <a href={`https://suzuri.jp/${suzuriUsername}`} className="member-header__link">
+                  <Image src="/icons/suzuri.svg" alt={`suzuriのユーザー@${suzuriUsername}`} width={22} height={22} />
                 </a>
               )}
               {websiteUrl && (
                 <a href={websiteUrl} className="member-header__link">
-                  <img
-                    src="/icons/link.svg"
-                    alt={`ウェブサイトのリンク`}
-                    width={22}
-                    height={22}
-                  />
+                  <Image src="/icons/link.svg" alt={`ウェブサイトのリンク`} width={22} height={22} />
                 </a>
               )}
             </div>
@@ -103,37 +56,37 @@ const Page: NextPage<Props> = (props) => {
         </ContentWrapper>
       </section>
     </>
-  );
-};
+  )
+}
 
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const id = params?.id as string;
-  const member = getMemberById(id);
-  const postItems = getMemberPostsById(id);
+  const id = params?.id as string
+  const member = getMemberById(id)
+  const postItems = getMemberPostsById(id)
 
-  if (!member) throw "User not found";
+  if (!member) throw 'User not found'
 
   return {
     props: {
       member,
       postItems,
     },
-  };
-};
+  }
+}
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const memberNameList = members.map((member) => encodeURIComponent(member.id));
+  const memberNameList = members.map((member) => encodeURIComponent(member.id))
   const paths = memberNameList.map((id) => {
     return {
       params: {
         id,
       },
-    };
-  });
+    }
+  })
   return {
     paths,
     fallback: false,
-  };
-};
+  }
+}
 
-export default Page;
+export default Page

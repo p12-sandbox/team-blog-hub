@@ -1,19 +1,16 @@
-import Link from "next/link";
-import { members } from "@members";
-import { getMemberPath } from "@src/utils/helper";
+import Link from 'next/link'
+import Image from 'next/image'
+import { members } from '@members'
+import { getMemberPath } from '@src/utils/helper'
 
 export const ScrollableMembers: React.FC = () => {
   return (
     <div className="scrollable-members">
       {members.map((member, i) => (
-        <Link
-          key={`scrollable-member-${i}`}
-          href={getMemberPath(member.id)}
-          passHref
-        >
+        <Link key={`scrollable-member-${i}`} href={getMemberPath(member.id)} passHref>
           <a className="scrollable-member__link">
             <span className="scrollable-member__image">
-              <img
+              <Image
                 src={member.avatarSrc}
                 alt={member.name}
                 className="scrollable-member__img"
@@ -26,5 +23,5 @@ export const ScrollableMembers: React.FC = () => {
         </Link>
       ))}
     </div>
-  );
-};
+  )
+}
