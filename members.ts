@@ -28,14 +28,17 @@ export const members: Member[] = [
     websiteUrl: 'https://herman.hatenablog.jp',
   },
   {
-    id: 'jay',
-    name: 'Jay',
-    bio: 'ラジオと小説と九州が好きな人です。仲良くしましょう！',
-    avatarSrc: '/avatars/jay.jpg',
-    sources: ['https://jay-forlearn.hatenablog.com/rss'],
-    twitterUsername: 'Jay_ZoNo',
-    suzuriUsername: 'j__a__y',
-    websiteUrl: 'https://jay-forlearn.hatenablog.com',
+    id: "jay",
+    name: "Jay",
+    bio: "ラジオと小説と九州が好きな人です。仲良くしましょう！",
+    avatarSrc: "/avatars/jay.jpg",
+    sources: [
+      "https://jay-forlearn.hatenablog.com/rss",
+      "https://jumpeiuezono.com/rss.xml",
+    ],
+    twitterUsername: "Jay_ZoNo",
+    suzuriUsername: "j__a__y",
+    websiteUrl: "https://jay-forlearn.hatenablog.com",
   },
   {
     id: 'yukyan',
@@ -60,5 +63,16 @@ export const members: Member[] = [
     twitterUsername: '_nacal',
     githubUsername: 'nacal',
     websiteUrl: 'https://nacal.io/',
+  },
+  {
+    id: "imfinechan",
+    name: "ぽん",
+    bio: "ぽんです！",
+    avatarSrc: "/avatars/pon.jpeg",
+    sources: [
+      "https://note.com/imfinechan/rss",
+    ],
+    twitterUsername: "imfinechan",
+    websiteUrl: "https://note.com/imfinechan/",
   },
 ];
