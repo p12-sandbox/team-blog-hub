@@ -2,7 +2,7 @@ export const config = {
   siteMeta: {
     title: "12期 Blog's",
     teamName: "12期",
-    description: "12期生のブログなどをまとめています。毎日午前10時、午後11時ごろにRSSをもとに更新を行います。",
+    description: "12期生のブログなどをまとめています。毎日午前7時、午後11時ごろにRSSをもとに更新を行います。",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
