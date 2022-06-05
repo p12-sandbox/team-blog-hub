@@ -1,4 +1,4 @@
-import { Member } from '@src/types';
+import { Member } from '@src/types'
 
 export const members: Member[] = [
   {
@@ -6,11 +6,7 @@ export const members: Member[] = [
     name: '悠久',
     bio: '広く浅くで何にでも手を出してしまうやつ。コメダに住むのが夢',
     avatarSrc: '/avatars/yukyu30.jpg',
-    sources: [
-      'https://note.com/yukyu30/rss',
-      'https://zenn.dev/yu_9/feed',
-      'https://blog.yukyu.net/rss.xml',
-    ],
+    sources: ['https://note.com/yukyu30/rss', 'https://zenn.dev/yu_9/feed', 'https://blog.yukyu.net/rss.xml'],
     twitterUsername: 'yukyu30',
     githubUsername: 'yukyu30',
     suzuriUsername: 'yukyu_konpeki_dou',
@@ -28,27 +24,21 @@ export const members: Member[] = [
     websiteUrl: 'https://herman.hatenablog.jp',
   },
   {
-    id: "jay",
-    name: "Jay",
-    bio: "ラジオと小説と九州が好きな人です。仲良くしましょう！",
-    avatarSrc: "/avatars/jay.jpg",
-    sources: [
-      "https://jay-forlearn.hatenablog.com/rss",
-      "https://jumpeiuezono.com/rss.xml",
-    ],
-    twitterUsername: "Jay_ZoNo",
-    suzuriUsername: "j__a__y",
-    websiteUrl: "https://jay-forlearn.hatenablog.com",
+    id: 'jay',
+    name: 'Jay',
+    bio: 'ラジオと小説と九州が好きな人です。仲良くしましょう！',
+    avatarSrc: '/avatars/jay.jpg',
+    sources: ['https://jay-forlearn.hatenablog.com/rss', 'https://jumpeiuezono.com/rss.xml'],
+    twitterUsername: 'Jay_ZoNo',
+    suzuriUsername: 'j__a__y',
+    websiteUrl: 'https://jay-forlearn.hatenablog.com',
   },
   {
     id: 'yukyan',
     name: 'ユーキャン',
     bio: 'ディズニーとゲームとYouTubeが好きなオタク。最近は英語学習してます！よろしくお願いします！',
     avatarSrc: '/avatars/yukyan.png',
-    sources: [
-      'https://nexem-dumpster.hatenablog.jp/rss',
-      'https://qiita.com/n3_x/feed',
-    ],
+    sources: ['https://nexem-dumpster.hatenablog.jp/rss', 'https://qiita.com/n3_x/feed'],
     twitterUsername: 'plane__crazy',
     githubUsername: 'n3xem',
     suzuriUsername: 'yukyanjp',
@@ -59,20 +49,18 @@ export const members: Member[] = [
     name: 'なかる',
     bio: 'なかるの発音は渋谷と同じです。',
     avatarSrc: '/avatars/nacal.png',
-    sources: ['https://nacal.hatenablog.com/rss'],
+    sources: ['https://nacal.hatenablog.com/rss', 'https://zenn.dev/nacal/feed'],
     twitterUsername: '_nacal',
     githubUsername: 'nacal',
     websiteUrl: 'https://nacal.io/',
   },
   {
-    id: "imfinechan",
-    name: "ぽん",
-    bio: "ぽんです！",
-    avatarSrc: "/avatars/pon.jpeg",
-    sources: [
-      "https://note.com/imfinechan/rss",
-    ],
-    twitterUsername: "imfinechan",
-    websiteUrl: "https://note.com/imfinechan/",
+    id: 'imfinechan',
+    name: 'ぽん',
+    bio: 'ぽんです！',
+    avatarSrc: '/avatars/pon.jpeg',
+    sources: ['https://note.com/imfinechan/rss'],
+    twitterUsername: 'imfinechan',
+    websiteUrl: 'https://note.com/imfinechan/',
   },
-];
+]
