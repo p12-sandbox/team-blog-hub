@@ -63,13 +63,4 @@ export const members: Member[] = [
     twitterUsername: 'imfinechan',
     websiteUrl: 'https://note.com/imfinechan/',
   },
-  {
-    id: 'seiji',
-    name: 'seiji',
-    bio: '水辺がすきです',
-    avatarSrc: '/avatars/seiji.jpg',
-    sources: ['https://seiji-yoshino.me/rss.xml'],
-    twitterUsername: 'yoshino_seiji',
-    websiteUrl: 'https://seiji-yoshino.me/',
-  },
 ]
